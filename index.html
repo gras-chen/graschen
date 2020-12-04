@@ -1,0 +1,484 @@
+<!doctype html> 
+<html lang="zh">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>It's me!</title>
+    <style>
+      body {
+        /* overflow: hidden; */
+        background-image: url(./images/bg-img-y.JPG);
+        min-height: 100vh;
+        -webkit-overflow-scrolling: touch;
+      }
+      section {
+        height: 100vh;
+        position: relative;
+        padding-top: 10vh;
+      }
+      .main {
+        margin-left: 100px;
+      }
+      .timeline-pointer:hover{
+        background-image: url(./images/bg-sm1.PNG);
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .h100 {
+        height: 100%;
+        /* background-color: rgb(243, 201, 201); */
+        /* padding: 10px; */
+      }
+      .h200 {
+        height: 200px;
+        /* background-color: rgba(245,222,179,0.2); */
+        /* padding: 15px; */
+      }
+      .h300 {
+        height: 300px;
+      }
+      .h400 {
+        height: 400px;
+        background-color: rgba(245,222,179,0.2);
+        
+
+      }
+      .nav .active {
+        background-color: rgba(245,222,179,0.2);
+      }
+    </style>
+    
+  </head>
+  <body data-spy="scroll" data-target=".nav" data-offset="50">
+    <!-- ********************SIDENAV******************** -->
+    <div class="nav sidenav">
+        <div class="">
+          <a href="#about" class="nav-link">關於<small> About</small></a>
+          <a href="#story" class="nav-link">歷程<small> Story</small></a>
+          <a href="#skills" class="nav-link">能力<small> Skills</small></a>
+          <a href="#portfolio" class="nav-link">作品<small> Portfolio</small></a>
+          <div class="linker d-flex d-phone">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.behance.net/grasdira"><i class="fab fa-behance-square"></i></a>
+          <a href="https://github.com/gras-chen"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>            
+          </div>
+        </div>
+
+    </div>
+
+    <!-- ********************ABOUT******************** -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+              <!-- 大頭照 連結 -->
+              <div class="col-lg-3 col-md-4 h200 m-1">
+                <div style="background-image: url(./images/S__2187322.jpg); height: 150px; width: 150px; border-radius: 50%;" class="bg-cover in_middle"></div>
+                <div class="in_middle mt-2 linker">
+                  <a href="https://www.instagram.com/grasdira_/"><i class="fab fa-instagram mr-2"></i></a>
+                  <a href="https://www.behance.net/grasdira"><i class="fab fa-behance-square mr-2"></i></a>
+                  <a href="https://github.com/gras-chen"><i class="fab fa-github mr-2"></i></a>
+                  <a href="#footer"><i class="far fa-envelope mr-2"></i></a>
+                </div>
+                <div class="sline"></div>
+              </div>
+              <!-- 個人資料 -->
+              <div class="col-lg-3 col-md-4 h200 mt-1 d-flex align-items-center">
+                <div class="" style="color: #664b24; border-radius: 20px;">
+                  <p class="bg-dgreen p-2 text-center" style="border-radius: 20px; width: 180px;">Gras Chen 陳如薏</p>
+                  <p class="ml-2">國立中正大學 中國文學系畢業<small> 2019.</small></p>
+                  <!-- <p>luyichen19970501@gmail.com</p> -->
+                  <p class="ml-2">website</p>
+                </div>
+              </div>
+            </div>
+            <!-- 簡介 -->
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-8 h200 bg-bwheat p-3" style="color: #664b24;">
+                <h6>簡介</h6>
+                <p></p>
+              </div>
+            </div>              
+        </div>
+    </section>
+
+    <!-- ********************STORY******************** -->
+    <section id="story">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-md-2 bg-dgreen text-center p-2 sectionTitle">My Story Line</div>
+        </div>
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-xl-5 col-lg-6 timeline-pointer h100">
+            <div class="linker">
+              <a data-toggle="modal" href="#ccucheer">
+                <h5>中正大學競技啦啦隊</h5>
+                <p class="ml-4">讓我熱愛一生的運動 ➜ </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-xl-5 col-lg-6 timeline-pointer h100">
+            <div class="linker">
+              <a data-toggle="modal" href="#busan">
+                <h5>韓國交換學生：釜山 東亞大學</h5>
+                <p class="ml-4">第一次出國就待了5個月 ➜ </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-xl-5 col-lg-6 timeline-pointer h100">
+            <div class="linker">
+              <a data-toggle="modal" href="#ccusport">
+                <h5>每一個在大學的寒暑假：運動小健將</h5>
+                <p class="ml-4">日夜和小朋友相處 ➜ </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-xl-5 col-lg-6 timeline-pointer h100">
+            <div class="linker">
+              <a data-toggle="modal" href="#workinghouse">
+                <h5>我的第一份正式工作：生活工場</h5>
+                <p class="ml-4">服務業帶給我的是 ➜ </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-xl-5 col-lg-6 timeline-pointer h100">
+            <div class="linker">
+              <a data-toggle="modal" href="#illustration">
+                <h5>治癒自己的事：插畫</h5>
+                <p class="ml-4">經營我的插畫品牌 ➜ </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-lg-3"></div>
+          <div class="col-xl-5 col-lg-6 timeline-pointer h100">
+            <div class="linker">
+              <a data-toggle="modal" href="#weblife">
+                <h5>人生最勇敢的決定：轉職進修</h5>
+                <p class="ml-4">從中文進入WEB的世界 ➜ </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------- Modal ---------------------------->
+    <!-- workinghouse -->
+    <div class="modal fade" id="workinghouse" tabindex="-1" role="dialog" aria-labelledby="workinghouseTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dgreen">
+            <h5 class="modal-title" id="workinghouseTitle">生活工場</h5>
+            <small>#勇於挑戰 #換位思考 #謹慎細心</small>
+          </div>
+          <div class="modal-body bg-light">
+            <ul class="a">工作內容：
+              <li>上貨，補貨，收銀</li>
+              <li>傢俱組裝，協助調整陳列</li>
+              <li>商品介紹推薦及販售（家居生活用品、家電、傢俱）</li>
+              <li>會員卡及聯名卡推廣</li>
+              <li>配合公司活動，調整賣場商品及陳列</li>
+              <li>電話通知優惠及會員權益</li>
+              <li>需久站及搬重物，經常面對人</li>
+              <li>其他店務：維持賣場清潔、業績策略發想、製作月帳等</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ccusport -->
+    <div class="modal fade" id="ccusport" tabindex="-1" role="dialog" aria-labelledby="ccusportTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header  bg-dgreen">
+            <h5 class="modal-title" id="ccusportTitle">運動小健將</h5>
+            <small>#耐心細心愛心 #每個人的優點 #觀察力 #特殊兒童</small>
+          </div>
+          <div class="modal-body">
+            <ul class="a">工作內容：
+              <li>照顧7至15歲的參加者</li>
+              <li>協助體育教練進行上課流程</li>
+              <li>引導孩童認識朋友，鼓勵他們勇於挑戰自我</li>
+              <li>危機處理(例如受傷、情緒失控、洗澡時忘記帶衣服等等)</li>
+              <li>維護參加者的安全，開心運動之餘，也讓他們學習遵守團體生活的規範</li>
+              <li>與家長聯絡，確認孩童所需(例如服藥及個性等等)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- busan -->
+    <div class="modal fade" id="busan" tabindex="-1" role="dialog" aria-labelledby="busanTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dgreen">
+            <h5 class="modal-title" id="busanTitle">釜山交換學生</h5>
+            <small>#韓文學習 #文化交流 #獨立 #很多個第一次</small>
+          </div>
+          <div class="modal-body">
+            <ul class="a">簡單文字加圖片
+              <li>校園生活</li>
+              <li>旅行</li>
+              <li>韓文</li>
+              <li>攝影</li>
+              <li>體驗</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ccucheer -->
+    <div class="modal fade" id="ccucheer" tabindex="-1" role="dialog" aria-labelledby="ccucheerTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dgreen">
+            <h5 class="modal-title" id="ccucheerTitle">中正競啦</h5>
+            <small>#信任夥伴 #相信自己 #勇氣與自信 #FORCE大家庭</small>
+          </div>
+          <div class="modal-body">
+            <ul class="a">簡單文字加圖片
+              <li>菜鳥學習</li>
+              <li>進步與突破</li>
+              <li>最自信的我</li>
+              <li>離開與轉換身分</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- illustration -->
+    <div class="modal fade" id="illustration" tabindex="-1" role="dialog" aria-labelledby="illustrationTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dgreen">
+            <h5 class="modal-title" id="illustrationTitle">我的插畫品牌</h5>
+            <small>#創作是養分 #社群經營 #嘗試與學習 #想像力</small>
+          </div>
+          <div class="modal-body">
+            <ul class="a">簡單文字加圖片
+              <li>簡單歷程:角色創作、每月桌布、主題繪圖</li>
+              <li>近期規劃</li>
+              <li>遠景思考</li>
+              <li>社群經營初心者</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- weblife -->
+    <div class="modal fade" id="weblife" tabindex="-1" role="dialog" aria-labelledby="weblifeTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dgreen">
+            <h5 class="modal-title" id="weblifeTitle">轉職</h5>
+            <small>#終身學習 #找答案 #站在巨人的肩膀上 #最棒的自我投資</small>
+          </div>
+          <div class="modal-body">
+            <ul class="a">簡單文字加圖片
+              <li>大四最後一學期接觸到人工智慧與python</li>
+              <li>勞動部勞動力發展署中彰投分署 跨平台網站設置及應用班 (109.06.08 ~ 109.11.25)</li>
+              <li>習得技能</li>
+              <li>考取證照</li>
+              <li>自我延伸和學習</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ********************SKILLS******************** -->
+    <section id="skills">
+        <div class="container">
+            <!-- 語言與證照 -->
+            <div class="row justify-content-center">
+              <div class="col-md-5 col-lg-4 d-flex justify-content-center">
+                <div class="d-flex flex-column mt-3">
+                  <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">∷ 語言Languages ∷</div>
+                  <div class="mb-2 py-3 px-2 bg-wheat">英文 English<br>TOEIC 855分(聽力:455，閱讀:400)</div>
+                  <div class="mb-3 py-3 px-2 bg-wheat">韓文 한국어<br>TOPIK II 3급(듣기66 쓰기19 읽기42)</div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 d-flex justify-content-center">
+                <div class="d-flex flex-column mt-3">
+                  <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">∷ 證照Certificate ∷</div>
+                  <div class="mb-2 py-2 px-3 bg-wheat">網頁設計丙級</div>
+                  <div class="mb-3 py-2 px-3 bg-wheat">軟體應用乙級</div>
+                </div>
+              </div>
+            </div>
+            <!-- 技能icon -->
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-5 d-flex justify-content-center">
+                <div class="d-flex flex-column mt-3">
+                  <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">網頁前端</div>
+                  <div class="d-flex flex-row">
+                    <div class="roundIcon"></div>
+                    <div class="roundIcon"></div>
+                    <div class="roundIcon"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 d-flex justify-content-center">
+                <div class="d-flex flex-column mt-3">
+                  <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">軟體應用</div>
+                  <div class="d-flex flex-row">
+                    <div class="roundIcon"></div>
+                    <div class="roundIcon"></div>
+                    <div class="roundIcon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************PORTFOLIO******************** -->
+    <section id="portfolio">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 col-xl-8 bg-dgreen text-center p-2">My Work</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-3 col-xl-4 h200 bg-cover mx-1  mt-2 bg-bwheat" style="background-image: url(./images/IMG_0911.JPG);">
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-4 h200 bg-cover mx-1  mt-2 bg-bwheat"
+            style="background-image: url(./images/maskmap.jpg);">
+              <a href=" https://gras-chen.github.io/HostWeb/" class="">
+                <div class="h-100 w-100 d-flex align-items-end p-3 text-center"><p class="bg-dgreen p-1">口罩地圖 Mask Map</p></div>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-3 col-lg-2 col-xl-3 h200 my-3 mx-1 bg-bwheat bg-cover" style="background-image: url(./images/IMG_0912.JPG);"></div>
+            <div class="col-md-3 col-lg-2 col-xl-3 h200 my-3 mx-1 bg-bwheat">4 </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 h200 my-3 mx-1 bg-bwheat bg-cover" style="background-image: url(./images/IMG_0939.JPG);">
+            </div>
+            
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-3 col-xl-5 h200 mx-1 bg-bwheat">6 </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 h200 mx-1 bg-bwheat">7 </div>
+          </div>
+
+        </div>
+    </section>
+    
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/WOW.js"></script>
+    <script>
+        new WOW().init();
+
+        // 一頁式網站scrollspy (http://ohohweb.blogspot.com/2018/11/bootstrapscrollspy.html)
+        $(document).ready(function() {
+          $(".navbar-nav a").on('click', function(event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    window.location.hash = hash;
+                  }); 
+              } // End if
+          }); 
+        });
+
+        // Copyright (c) 2020 by Ally Zeng (https://codepen.io/chonin/pen/OrXQGB)
+        const $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'),
+            $section = $('section');
+
+        var numOfPages = $section.length - 1, //取得section的數量
+            curPage = 0, //初始頁
+            scrollLock = false;
+
+        function scrollPage() {
+        //滑鼠滾動
+        $(document).on("mousewheel DOMMouseScroll", function(e) {
+            if (scrollLock) return;
+            if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0)
+            navigateUp();
+            else
+            navigateDown();
+        });
+        //鍵盤上下鍵
+        $(document).on("keydown", function(e) {
+            if (scrollLock) return;
+            if (e.which === 38)
+            navigateUp();
+            else if (e.which === 40)
+            navigateDown();
+        });
+        //手機平板滑動(me)
+        // $(document).on("swipe", function(e) {
+        //   if (scrollLock) return;
+        //     if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0)
+        //     navigateUp();
+        //     else
+        //     navigateDown();
+        // });
+        }
+
+        function pagination() {
+        scrollLock = true;
+        $body.stop().animate({
+            scrollTop: $section.eq(curPage).offset().top
+        }, 1000, 'swing', function(){
+            scrollLock = false;
+        });
+        };
+
+        function navigateUp () {
+        if (curPage === 0) return;
+        curPage--;
+        pagination();
+        };
+
+        function navigateDown() {
+        if (curPage === numOfPages) return;
+        curPage++;
+        pagination();
+        };
+
+
+        $(function() {
+        scrollPage();
+        });
+
+    </script>
+    
+    
+  </body>
+</html>
