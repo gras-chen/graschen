@@ -24,34 +24,67 @@
         position: relative;
         padding-top: 10vh;
       }
-      .main {
-        margin-left: 100px;
-      }
       .timeline-pointer:hover{
         background-image: url(./images/bg-sm1.PNG);
         background-position: center center;
         background-size: cover;
       }
-
       .h100 {
         height: 100%;
-        /* background-color: rgb(243, 201, 201); */
-        /* padding: 10px; */
       }
       .h200 {
         height: 200px;
-        /* background-color: rgba(245,222,179,0.2); */
-        /* padding: 15px; */
       }
-      .h300 {
-        height: 300px;
-      }
-      .h400 {
-        height: 400px;
-        background-color: rgba(245,222,179,0.2);
-      }
-      .nav .active {
-        background-color: rgba(245,222,179,0.2);
+      @media screen and (max-width: 992px) {
+        body {
+          overflow-y: visible;
+          overflow-x: hidden;
+          height: auto;
+
+        }
+        section{
+          height: 100%;
+          padding-top: 15vh;
+        }
+        a small::before {
+          content: '\A';
+          white-space: pre;
+        }
+        .d-phone a{
+          display: none;
+        }
+        .sline {
+          height: 3px;
+          width: 100%;
+          background-color: #f2f2f2;
+          margin-top: 20px;
+        }
+        .sidenav {
+          top: 0;
+          z-index: 99;
+          background-color: #fff;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          padding: 5px;
+          left: 0;
+          font-size: 15px;
+
+        }
+        .sidenav a {
+          float: left;
+          margin: 0 5px;
+          text-align: center;
+        }
+        .linker a h5{
+          font-size: 16px;
+        }
+        .timeline-pointer:before{
+          display: none;
+        }
+        .timeline-pointer:hover{
+          background-color: rgba(255,255,255,0.5);
+        }
       }
     </style>
     
@@ -101,9 +134,14 @@
             </div>
             <!-- 簡介 -->
             <div class="row justify-content-center">
-              <div class="col-lg-6 col-md-8 h200 bg-bwheat p-3" style="color: #664b24;">
-                <h6>簡介</h6>
-                <p></p>
+              <div class="col-lg-6 col-md-8 h100 bg-bwheat p-3" style="color: #664b24;">
+                <ul>
+                  <li>怕鴿子的狗派植物少女</li>
+                  <li>重視生活中閃閃發光的小事物</li>
+                  <li>23歲以前都用一顆文學腦袋活著</li>
+                  <li>偶爾兼職當一下插畫家</li>
+                  <li>人生最棒的決定是<strong>開始學程式!!</strong></li>
+                </ul>
               </div>
             </div>              
         </div>
@@ -111,7 +149,7 @@
 
     <!-- ********************STORY******************** -->
     <section id="story">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
           <div class="col-xl-2 col-lg-3"></div>
           <div class="col-md-2 bg-dgreen text-center p-2 sectionTitle">My Story Line</div>
@@ -321,8 +359,8 @@
               <div class="col-md-5 col-lg-4 d-flex justify-content-center">
                 <div class="d-flex flex-column mt-3">
                   <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">∷ 語言Languages ∷</div>
-                  <div class="mb-2 py-3 px-2 bg-wheat">英文 English<br>TOEIC 855分(聽力:455，閱讀:400)</div>
-                  <div class="mb-3 py-3 px-2 bg-wheat">韓文 한국어<br>TOPIK II 3급(듣기66 쓰기19 읽기42)</div>
+                  <div class="mb-2 py-3 px-2 bg-wheat">英文 English<br>TOEIC 855分 (聽力455，閱讀400)</div>
+                  <div class="mb-3 py-3 px-2 bg-wheat">韓文 한국어<br>TOPIK2 3급 (듣기66,쓰기19,읽기42)</div>
                 </div>
               </div>
               <div class="col-md-5 col-lg-3 d-flex justify-content-center">
@@ -339,9 +377,20 @@
                 <div class="d-flex flex-column mt-3">
                   <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">網頁前端</div>
                   <div class="d-flex flex-row">
-                    <div class="roundIcon"></div>
-                    <div class="roundIcon"></div>
-                    <div class="roundIcon"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/html.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/CSS.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/js.png);"></div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="roundIcon img-icon" style="background-image: url(./images/Bootstrap.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/jQuery.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/dw.png);"></div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="mt-1 py-3 px-2 bg-wheat">
+                      <span>◆RWD網頁 ◆AJAX及MY SQL應用</span><br>
+                      <span>◆基本PHP ◆基礎React native</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -349,9 +398,19 @@
                 <div class="d-flex flex-column mt-3">
                   <div class="mb-2 p-2 bg-dgreen text-center font-weight-bold">軟體應用</div>
                   <div class="d-flex flex-row">
-                    <div class="roundIcon"></div>
-                    <div class="roundIcon"></div>
-                    <div class="roundIcon"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/word.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/excel.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/access.png);"></div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="roundIcon img-icon" style="background-image: url(./images/powerpoint.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/procreate.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/Xd.png);"></div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="roundIcon img-icon" style="background-image: url(./images/ps.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/ai.png);"></div>
+                    <div class="roundIcon img-icon" style="background-image: url(./images/pr.png);"></div>
                   </div>
                 </div>
               </div>
