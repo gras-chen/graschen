@@ -68,6 +68,12 @@ a{
   text-decoration: none;
   padding: 5px;
 }
+a:active {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 .linker a h5 {
   font-weight: 500;
   color: #664b24;
