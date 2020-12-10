@@ -138,6 +138,7 @@ ul {
   border-radius: 20px;
   /* height: 100%; */
   padding-left: 10px;
+  text-decoration: none;
 }
 .timeline-pointer:before{
   position: absolute;
@@ -147,9 +148,14 @@ ul {
   height: 100%;
   background-color: rgb(148, 122, 66);
   left: -5%;
+  text-decoration: none;
 }
 .timeline-pointer:hover:before {
   background-color: rgb(202, 175, 116);
+  text-decoration: none;
+}
+.timeline-pointer:visited:before{
+  text-decoration: none;
 }
 .nav .active {
   background-color: rgba(245,222,179,0.2);
