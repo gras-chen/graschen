@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>It's me!</title>
+    <title>I'm Gras!</title>
     <style>
       body {
         /* overflow: hidden; */
@@ -93,12 +93,12 @@
     <!-- ********************SIDENAV******************** -->
     <div class="nav sidenav">
         <div class="">
-          <a href="#about" class="nav-link">關於<small> About</small></a>
-          <a href="#story" class="nav-link">歷程<small> Story</small></a>
-          <a href="#skills" class="nav-link">能力<small> Skills</small></a>
-          <a href="#portfolio" class="nav-link">作品<small> Portfolio</small></a>
+          <a href="#about" class="nav-link" id="slideToAbout">關於<small> About</small></a>
+          <a href="#story" class="nav-link" id="slideToStory">歷程<small> Story</small></a>
+          <a href="#skills" class="nav-link" id="slideToSkills">能力<small> Skills</small></a>
+          <a href="#portfolio" class="nav-link" id="slideToPortfolio">作品<small> Portfolio</small></a>
           <div class="linker d-flex d-phone">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/grasdira_/"><i class="fab fa-instagram"></i></a>
           <a href="https://www.behance.net/grasdira"><i class="fab fa-behance-square"></i></a>
           <a href="https://github.com/gras-chen"><i class="fab fa-github"></i></a>
           <a href="#"><i class="far fa-envelope"></i></a>            
@@ -135,7 +135,7 @@
             <!-- 簡介 -->
             <div class="row justify-content-center">
               <div class="col-lg-6 col-md-8 h100 bg-bwheat p-3" style="color: #664b24;">
-                <ul>
+                <ul class="">
                   <li>怕鴿子的狗派植物少女</li>
                   <li>重視生活中閃閃發光的小事物</li>
                   <li>23歲以前都用一顆文學腦袋活著</li>
@@ -693,6 +693,33 @@
     <script>
         new WOW().init();
 
+      $(function () {
+        $('#slideToAbout').click(function() {
+          $('html,body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000);
+          return false;
+        });
+        $('#slideToStory').click(function() {
+          $('html,body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000);
+          return false;
+        });
+        $('#slideToSkills').click(function() {
+          $('html,body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000);
+          return false;
+        });
+        $('#slideToPortfolio').click(function() {
+          $('html,body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000);
+          return false;
+        });
+      });
+
         // 一頁式網站scrollspy (http://ohohweb.blogspot.com/2018/11/bootstrapscrollspy.html)
         $(document).ready(function() {
           $(".navbar-nav a").on('click', function(event) {
@@ -733,14 +760,6 @@
             else if (e.which === 40)
             navigateDown();
         });
-        //手機平板滑動(me)
-        // $(document).on("swipe", function(e) {
-        //   if (scrollLock) return;
-        //     if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0)
-        //     navigateUp();
-        //     else
-        //     navigateDown();
-        // });
         }
 
         function pagination() {
