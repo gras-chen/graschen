@@ -19,11 +19,17 @@
 
     <title>I'm Gras!</title>
     <style>
+      @font-face {
+      font-family: jf-openhuninn;
+      src: url(./font/jf-openhuninn-1.1.ttf);
+}
       body {
         /* overflow: hidden; */
         background-image: url(./images/bg-img-y.JPG);
         min-height: 100vh;
         -webkit-overflow-scrolling: touch;
+      }
+      body, html {
         font-family: jf-openhuninn;
       }
       section {
@@ -108,7 +114,7 @@
           <a href="https://www.instagram.com/grasdira_/"><i class="fab fa-instagram"></i></a>
           <a href="https://www.behance.net/grasdira"><i class="fab fa-behance-square"></i></a>
           <a href="https://github.com/gras-chen"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="far fa-envelope"></i></a>            
+          <a href="#contact" id="slideToContact"><i class="far fa-envelope"></i></a>
           </div>
         </div>
 
@@ -116,42 +122,42 @@
 
     <!-- ********************ABOUT******************** -->
     <section id="about">
-        <div class="container">
-            <div class="row justify-content-center">
-              <!-- 大頭照 連結 -->
-              <div class="col-lg-3 col-md-4 h200 m-1">
-                <div style="background-image: url(./images/S__2187322.jpg); height: 150px; width: 150px; border-radius: 50%;" class="bg-cover in_middle"></div>
-                <div class="in_middle mt-2 linker">
-                  <a href="https://www.instagram.com/grasdira_/"><i class="fab fa-instagram mr-2"></i></a>
-                  <a href="https://www.behance.net/grasdira"><i class="fab fa-behance-square mr-2"></i></a>
-                  <a href="https://github.com/gras-chen"><i class="fab fa-github mr-2"></i></a>
-                  <a href="#footer"><i class="far fa-envelope mr-2"></i></a>
-                </div>
-                <div class="sline"></div>
+      <div class="container">
+          <div class="row justify-content-center">
+            <!-- 大頭照 連結 -->
+            <div class="col-lg-3 col-md-4 h200 m-1">
+              <div style="background-image: url(./images/S__2187322.jpg); height: 150px; width: 150px; border-radius: 50%;" class="bg-cover in_middle"></div>
+              <div class="in_middle mt-2 linker">
+                <a href="https://www.instagram.com/grasdira_/"><i class="fab fa-instagram mr-2"></i></a>
+                <a href="https://www.behance.net/grasdira"><i class="fab fa-behance-square mr-2"></i></a>
+                <a href="https://github.com/gras-chen"><i class="fab fa-github mr-2"></i></a>
+                <a href="#contact"><i class="far fa-envelope mr-2"></i></a>
               </div>
-              <!-- 個人資料 -->
-              <div class="col-lg-3 col-md-4 h200 mt-1 d-flex align-items-center">
-                <div class="" style="color: #664b24; border-radius: 20px;">
-                  <p class="bg-dgreen p-2 text-center" style="border-radius: 20px; width: 180px;">Gras Chen 陳如薏</p>
-                  <p class="ml-2">國立中正大學 中國文學系畢業<small> 2019.</small></p>
-                  <!-- <p>luyichen19970501@gmail.com</p> -->
-                  <p class="ml-2">website</p>
-                </div>
+              <div class="sline"></div>
+            </div>
+            <!-- 個人資料 -->
+            <div class="col-lg-3 col-md-4 h200 mt-1 d-flex align-items-center">
+              <div class="" style="color: #664b24; border-radius: 20px;">
+                <p class="bg-dgreen p-2 text-center" style="border-radius: 20px; width: 180px;">Gras Chen 陳如薏</p>
+                <p class="ml-2">國立中正大學 中國文學系畢業<small> 2019.</small></p>
+                <!-- <p>luyichen19970501@gmail.com</p> -->
+                <p class="ml-2">website</p>
               </div>
             </div>
-            <!-- 簡介 -->
-            <div class="row justify-content-center">
-              <div class="col-lg-6 col-md-8 h100 bg-bwheat p-3" style="color: #664b24;">
-                <ul class="">
-                  <li>怕鴿子的狗派植物少女</li>
-                  <li>重視生活中閃閃發光的小事物</li>
-                  <li>23歲以前都用一顆文學腦袋活著</li>
-                  <li>偶爾兼職當一下插畫家</li>
-                  <li>人生最棒的決定是<strong>開始學程式!!</strong></li>
-                </ul>
-              </div>
-            </div>              
-        </div>
+          </div>
+          <!-- 簡介 -->
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 h100 bg-bwheat p-3" style="color: #664b24;">
+              <ul class="">
+                <li>怕鴿子的狗派植物少女</li>
+                <li>重視生活中閃閃發光的小事物</li>
+                <li>23歲以前都用一顆文學腦袋活著</li>
+                <li>偶爾兼職當一下插畫家</li>
+                <li>人生最棒的決定是<strong>開始學程式!!</strong></li>
+              </ul>
+            </div>
+          </div>              
+      </div>
     </section>
 
     <!-- ********************STORY******************** -->
@@ -690,6 +696,25 @@
 
         </div>
     </section>
+
+    <!-- ********************CONTACT******************** -->
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- pic -->
+          <div class="col-lg-3 col-md-4 h200 m-1 in_middle">
+            <div style="background-image: url(./images/S__2187322.jpg); height: 150px; width: 150px; border-radius: 50%;" class="bg-cover in_middle"></div>
+          </div>
+        </div>
+        <!-- 資訊 -->
+        <div class="row justify-content-center in_middle">
+          <div class="col-lg-6 col-md-8 p-3" style="color: #664b24;">
+            <p><i class="far fa-envelope mr-2"></i>luyichen19970501@gmail.com</p>
+            <p>© GrasChen 2020</p>
+          </div>
+        </div>              
+      </div>
+    </section>
     
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
@@ -723,6 +748,12 @@
           return false;
         });
         $('#slideToPortfolio').click(function() {
+          $('html,body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000);
+          return false;
+        });
+        $('#slideToContact').click(function() {
           $('html,body').animate({
               scrollTop: $($.attr(this, 'href')).offset().top
           }, 1000);
