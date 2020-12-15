@@ -59,6 +59,32 @@
   border-radius: 20px;
   background-repeat: no-repeat;
 }
+
+.portfolio-bg {
+  background-color: rgb(255,255,255,0.7);
+  color: #7c674b;
+  width: 150px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  margin: 15px 0;
+  /* border-radius: 20px; */
+  height: auto;
+  transition: width 0.8s, height 2s;
+  transition-timing-function: ease-out;
+}
+.lists{
+  /* margin-top: 0px; */
+  display: none;
+}
+.portfolio-bg:hover {
+  width: 100%;
+  height: 85%;
+}
+.portfolio-bg:hover .lists{
+  display: inline-block;
+}
+
 .in_middle {
   text-align: center; 
   margin: 0 auto;
@@ -66,13 +92,16 @@
 a{
   color: #627e54;
   text-decoration: none;
-  padding: 5px;
+  
 }
 a:active {
   text-decoration: none;
 }
 a:visited {
   text-decoration: none;
+}
+.linker a {
+  padding: 5px;
 }
 .linker a h5 {
   font-weight: 500;
@@ -113,7 +142,7 @@ a:visited {
   text-decoration: none;
 }
 ul {
-  list-style-type: circle;
+  list-style-type: none;
 }
 .roundIcon {
   background-color: rgba(245,222,179,0.2);
