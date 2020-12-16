@@ -58,7 +58,6 @@
           overflow-y: visible;
           overflow-x: hidden;
           height: auto;
-
         }
         section{
           height: 100%;
@@ -87,7 +86,6 @@
           padding: 5px;
           left: 0;
           font-size: 15px;
-
         }
         .sidenav a {
           float: left;
@@ -102,6 +100,13 @@
         }
         .timeline-pointer:hover{
           background-color: rgba(255,255,255,0.5);
+        }
+        .timeline-pointer:visited:before,
+        .timeline-pointer:visited{
+          text-decoration: none;
+        }
+        .phone_hidden{
+          display: none;
         }
       }
     </style>
@@ -726,7 +731,7 @@
               </a>
             </div>
           </div>
-          <div class="row justify-content-center mb-2">
+          <div class="row justify-content-center mb-2 phone_hidden">
             <div class="col-md-4 col-lg-3 col-xl-5 h200 mx-1 bg-bwheat bg-cover" style="background-image: url('待完成再更新');">
               <!-- <a href="" class="">
                 <div class="portfolio-bg">
